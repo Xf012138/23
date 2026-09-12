@@ -54,7 +54,7 @@ jobs:
       - name: Build APK
         run: |
           echo "Starting build..."
-          buildozer android debug 2>&1
+          yes | buildozer android debug 2>&1
         env:
           ANDROIDSDK: $HOME/.buildozer/android/platform/android-sdk
           ANDROIDNDK: $HOME/.buildozer/android/platform/android-ndk-r25b
